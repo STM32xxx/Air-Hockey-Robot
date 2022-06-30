@@ -1,0 +1,34 @@
+﻿生成启动时间为 2018/9/21 20:42:44。
+     1>项目“D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\ConsoleApplication1\ConsoleApplication1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Visual Studio 2013\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt serialport.cpp "源.cpp"
+         serialport.cpp
+         源.cpp
+     1>源.cpp(160): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>源.cpp(180): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>源.cpp(186): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>源.cpp(270): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>源.cpp(271): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+     1>源.cpp(300): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>源.cpp(310): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>源.cpp(349): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>源.cpp(359): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+       Link:
+         D:\Visual Studio 2013\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\x64\Release\ConsoleApplication1.exe" /INCREMENTAL:NO /NOLOGO opencv_calib3d330d.lib opencv_core330d.lib opencv_dnn330d.lib opencv_features2d330d.lib opencv_flann330d.lib opencv_highgui330d.lib opencv_imgcodecs330d.lib opencv_imgproc330d.lib opencv_ml330d.lib opencv_objdetect330d.lib opencv_photo330d.lib opencv_shape330d.lib opencv_stitching330d.lib opencv_superres330d.lib opencv_video330d.lib opencv_videoio330d.lib opencv_videostab330d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\x64\Release\ConsoleApplication1.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\x64\Release\ConsoleApplication1.lib" /MACHINE:X64 x64\Release\serialport.obj
+         "x64\Release\源.obj"
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::circle(class cv::_InputOutputArray const &,class cv::Point_<int>,int,class cv::Scalar_<double> const &,int,int,int)" (?circle@cv@@YAXAEBV_InputOutputArray@1@V?$Point_@H@1@HAEBV?$Scalar_@N@1@HHH@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::GaussianBlur(class cv::_InputArray const &,class cv::_OutputArray const &,class cv::Size_<int>,double,double,int)" (?GaussianBlur@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@V?$Size_@H@1@NNH@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "double __cdecl cv::contourArea(class cv::_InputArray const &,bool)" (?contourArea@cv@@YANAEBV_InputArray@1@_N@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "public: void __cdecl cv::Mat::copyTo(class cv::_OutputArray const &)const " (?copyTo@Mat@cv@@QEBAXAEBV_OutputArray@2@@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::inRange(class cv::_InputArray const &,class cv::_InputArray const &,class cv::_InputArray const &,class cv::_OutputArray const &)" (?inRange@cv@@YAXAEBV_InputArray@1@00AEBV_OutputArray@1@@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::line(class cv::_InputOutputArray const &,class cv::Point_<int>,class cv::Point_<int>,class cv::Scalar_<double> const &,int,int,int)" (?line@cv@@YAXAEBV_InputOutputArray@1@V?$Point_@H@1@1AEBV?$Scalar_@N@1@HHH@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::findContours(class cv::_InputOutputArray const &,class cv::_OutputArray const &,int,int,class cv::Point_<int>)" (?findContours@cv@@YAXAEBV_InputOutputArray@1@AEBV_OutputArray@1@HHV?$Point_@H@1@@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::putText(class cv::_InputOutputArray const &,class cv::String const &,class cv::Point_<int>,int,double,class cv::Scalar_<double>,int,int,bool)" (?putText@cv@@YAXAEBV_InputOutputArray@1@AEBVString@1@V?$Point_@H@1@HNV?$Scalar_@N@1@HH_N@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@HH@Z)
+     1>源.obj : error LNK2001: 无法解析的外部符号 "void __cdecl cv::imshow(class cv::String const &,class cv::_InputArray const &)" (?imshow@cv@@YAXAEBVString@1@AEBV_InputArray@1@@Z)
+     1>D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\x64\Release\ConsoleApplication1.exe : fatal error LNK1120: 10 个无法解析的外部命令
+     1>已完成生成项目“D:\OpenCV_Demo\冰球机器人\AIR HOCKEY v3.0\ConsoleApplication1\ConsoleApplication1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.24
