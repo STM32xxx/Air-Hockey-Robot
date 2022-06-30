@@ -21,6 +21,8 @@
 
 <div align=left><img width=800 src="image\整体图片.jpg">
 
+<div align=left><img width=800 src="image\摄像头截图.jpg">
+
 下位机控制采用的arduino mega2560+ramps1.4扩展板，和diy 3d打印机常用的主控一样。
 
 下位机Arduino代码使用的VS2013编译，Arduino官方IDE实在是太难用。Visual Studio安装一个Arduino插件后也可以编译上传Arduino代码。下位机功能类似于GRBL固件，控制击球器点对点移动。与GRBL不同的是，使用GRBL固件时，向下位机发送A点坐标，电机向A点运动，运动期间再发送B点坐标，电机要到达A点之后才会向B点运动。但冰球机器人运动轨迹是上位机来预测的，终点在不断变化，如果还按照GRBL固件来的话会走很多多余路线，也就不能及时抵挡冰球。因此冰球机器人是接收到新的坐标B后便放弃A坐标，立刻向B坐标运动。
